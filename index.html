@@ -5,6 +5,8 @@
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
       /* Large desktop */
       @media (min-width: 980px) {
@@ -13,14 +15,20 @@
         }
       }
       body {
-      padding-top: 20px;
-      padding-bottom: 40px;
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
       }
-      .container {
-      width: 960px;
+      .heading, .subheading {
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: center;
       }
       p.lead {
-      padding-top: 15px;
+      padding-top: 1.5%;
+      font-size: 24px;
+      line-height: 30px;
+      }
+      p {
+      font-size: 18px;
+      line-height: 24px;
       }
       .navigation, .pitch, .section1, .section2, .faq, .footer {
       padding: 10px 0px 10px 0px;
@@ -65,26 +73,24 @@
 	</div>
       </div>
     </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizeable layout -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementin-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+	<div class="span12">
+	  <h1>Product</h1>
 	</div>
       </div>
-      <div class="row heading">
+      <div class="row-fluid subheading">
 	<div class="span12">
-	  <h1>Bitstarter Title For Testing Branches</h1>
-	</div>
-      </div>
-      <div class="row subheading">
-	<div class="span12">
-	  <p class="lead">This is my first bitstarter project. Second change to reflect develop-staging merge</p>
+	  <!-- Special typography for Bootstrap for lead paragraph -->
+	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	  <p class="lead">One sentence description<:P>
 	</div>
       </div>
       <div class="row pitch">
